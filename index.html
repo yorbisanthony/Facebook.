@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
-<html lang="en">
-  <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook-Inicia seion o registrate</title>
+    <title>Página de inicio de sesión de Facebook | CodingNepal</title>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+<body>
     <div class="container flex">
-      <div class="facebook-page flex">
-        <div class="text">
-          <h1>facebook</h1>
-          <p>Conéctate con amigos y el mundo
-a tu alrededor en Facebook.</p>
+        <div class="facebook-page flex">
+            <div class="text">
+                <h1>Facebook</h1>
+                <p>Conéctate con amigos y el mundo </p>
+                <p> a tu alrededor en Facebook.</p>
+            </div>
+            <form action="#" method="POST"> <!-- Agrega el atributo method="POST" para enviar datos del formulario a través de POST -->
+                <input type="email" name="email" placeholder="Correo electrónico o número de teléfono" required> <!-- Agrega el atributo name="email" para identificar el campo en PHP -->
+                <input type="password" name="password" placeholder="Contraseña" required> <!-- Agrega el atributo name="password" para identificar el campo en PHP -->
+                <div class="link">
+                    <button type="submit" class="login">Iniciar sesión</button>
+                    <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
+                </div>
+                <hr>
+                <div class="button">
+                    <a href="#">Crear cuenta nueva</a>
+                </div>
+            </form>
         </div>
-        <form action="#">
-          <input type="email" placeholder="Correo electronico o numero de telefono" required>
-          <input type="password" placeholder="Contraseña" required>
-          <div class="link">
-            <button type="submit" class="login">Iniciar sesion</button>
-            <a href="#" class="forgot">Olvidaste Tu Contraseña?</a>
-          </div>
-          <hr>
-          <div class="button">
-            <a href="#">Crear cuenta nueva</a>
-          </div>
-        </form>
-      </div>
     </div>
-  </body>
+</body>
 </html>
